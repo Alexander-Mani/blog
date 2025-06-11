@@ -45,3 +45,13 @@ yarn-error.log*
 
 # Contentlayer
 .contentlayer
+
+# Node lockfile (use only one)
+package-lock.json
+
+yarn.lock
+
+# Deprecated internal folders
+data/depricated/
+
+
