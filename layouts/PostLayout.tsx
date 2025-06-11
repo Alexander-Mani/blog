@@ -95,21 +95,6 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700">
               <div className="prose dark:prose-invert max-w-none pt-10 pb-8">{children}</div>
-              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(path)} rel="nofollow">
-                  Discuss on Twitter
-                </Link>
-                {` • `}
-                <Link href={editUrl(filePath)}>View on GitHub</Link>
-              </div>
-              {siteMetadata.comments && (
-                <div
-                  className="pt-6 pb-6 text-center text-gray-700 dark:text-gray-300"
-                  id="comment"
-                >
-                  <Comments slug={slug} />
-                </div>
-              )}
             </div>
             <footer>
               <div className="divide-gray-200 text-sm leading-5 font-medium dark:divide-gray-700">
@@ -142,6 +127,24 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
     </SectionContainer>
   )
 }
+
+//<div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
+//    <Link href={discussUrl(path)} rel="nofollow">
+//      Discuss on Twitter
+//    </Link>
+//    {` • `}
+//    <Link href={editUrl(filePath)}>View on GitHub</Link>
+//  </div>
+
+//
+//{siteMetadata.comments && (
+//  <div
+//    className="pt-6 pb-6 text-center text-gray-700 dark:text-gray-300"
+//    id="comment"
+//  >
+//    <Comments slug={slug} />
+//  </div>
+//)}
 
 //
 //{(next || prev) && (
