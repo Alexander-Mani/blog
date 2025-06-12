@@ -6,6 +6,7 @@ const headerNavLinks = [
   { href: 'https://wiki.frostbyte.is/', title: 'Wiki' },
   { href: 'https://www.frostbyte.is/', title: 'Site' },
   { href: '/about', title: 'About' },
+  { href: '/report', title: 'Report' },
 ]
 
 export default headerNavLinks
